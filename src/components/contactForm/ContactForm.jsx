@@ -12,7 +12,7 @@ export class ContactForm extends Component {
         this.setState({ [name]: value });
     };
 
-    hanleSubmit = event => {
+    handleSubmit = event => {
         event.preventDefault();
         this.props.onSubmit({
             name: this.state.name,
